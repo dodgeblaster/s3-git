@@ -5,7 +5,7 @@ import { promisify } from 'util';
 
 const execAsync = promisify(exec);
 
-const BUCKET_NAME = 'garyjennings-git';
+const BUCKET_NAME = process.env.GIT_BUCKET_NAME;
 
 async function downloadFromS3(key, filePath) {
     try {
