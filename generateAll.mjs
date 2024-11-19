@@ -67,12 +67,12 @@ async function generateHtmlForRepo(zipPath, repoName) {
               <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
               <script>hljs.highlightAll();</script>
             </head>
-            <body class="bg-gray-100">
+            <body class="">
               <div class="container mx-auto px-4 py-8">
                 <h1 class="text-2xl font-bold mb-4 pb-2 border-b">${
                     entry.entryName
                 }</h1>
-                <pre class="bg-white p-4 rounded-lg shadow"><code class="text-sm language-${extension}">${escapeHtml(
+                <pre class="bg-white"><code class="text-sm language-${extension}">${escapeHtml(
                 content
             )}</code></pre>
               </div>
